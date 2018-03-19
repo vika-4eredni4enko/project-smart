@@ -1,0 +1,59 @@
+.services
+	padding:
+		top: 145px
+		bottom: 150px
+
+.tab-box
+	padding-top: 125px 
+	&:after 
+		clear: both
+		content: ""
+		display: block
+	> div 
+		margin: 0 0 0 100px
+	.tab-nav 
+		margin: 0
+		padding: 0
+		list-style: none
+		width: 100px
+		float: left
+		li 
+			float: left
+			margin-bottom: 5px
+			&:hover
+				box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.24)
+				border-radius: 3px
+	.tab-panels
+		.target
+			float: left
+			width: 70%
+			padding:
+				left: 115px
+				right: 100px
+			h3
+				font-size: $fs + 14
+				color: $text-h3-services-color
+			p
+				text-align: left
+			hr
+				width: 60px
+				height: 3px
+				background-color: $button-color
+				border: 0
+			button
+				padding: 15px 60px 15px 60px
+				border: 1px solid #ededed
+				border-radius: 25px
+				background-color: $white
+				color: $text-color
+				outline: none
+				margin: 40px 0
+				box-shadow: 0px 8px 19px 0px rgba(50, 50, 50, 0.06)
+				span
+					color: $text-color
+					padding-right: 15px
+		.thumbnail
+			float: right
+			width: 30%
+		#t1, #t2, #t3, #t4
+			overflow: hidden

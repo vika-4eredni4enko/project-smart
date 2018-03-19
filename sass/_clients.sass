@@ -1,0 +1,86 @@
+.clients
+	padding:
+		top: 130px
+		bottom: 140px
+	.owl-carousel
+		.owl-dots
+			text-align: center
+			margin-top: 45px
+			.owl-dot
+				display: inline-block
+				vertical-align: middle
+				margin-right: 8px
+				span
+					display: block
+					width: 18px
+					height: 6px
+					border-radius: 5px
+					background-color: #e0e0e0
+			.active 
+				span
+					background-color: $active-color
+		.owl-nav
+			%owl-base
+				border-radius: 25px
+				width: 50px
+				height: 50px
+				padding-top: 12px
+				font-size: 20px
+				position: absolute
+				top: 40%
+				text-align: center
+				background-color: $white
+				box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.15)
+				color: #343434
+			%owl-hover-base
+				background-color: $active-color
+				color: $white
+				box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.39)
+			.owl-prev
+				@extend %owl-base
+				left: -26px
+				&:before
+					content: "\f053"
+					font-family: FontAwesome
+				&:hover
+					@extend %owl-hover-base
+
+			.owl-next
+				@extend %owl-base
+				left: auto
+				right: -26px
+				&:before
+					content: "\f054"
+					font-family: FontAwesome
+				&:hover
+					@extend %owl-hover-base
+		.item
+			padding:
+				top: 60px
+				bottom: 10px
+				left: 10px
+				right: 10px
+		.inner
+			border: 1px solid #d5d5d5
+			padding:
+				left: 50px
+				right: 50px
+				bottom: 20px
+			&:hover
+				box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.15)
+			img
+				width: 100px
+				height: 100px
+				margin: 0 auto
+				margin-top: -60px
+				margin-bottom: 40px
+			p
+				padding-bottom: 15px
+			.fa-stars
+				text-align: center
+				padding-bottom: 15px
+				padding-top: 5px
+				color: $star
+				font-size: 12px
+	p
+		padding-bottom: 70px

@@ -1,0 +1,50 @@
+.working 
+	padding:
+		top: 140px
+		bottom: 140px
+	text-align: center
+	h3
+		color: $text-work-color
+		margin:
+			top: 20px
+			bottom: 10px
+	.box
+		padding-top: 100px
+		p
+			color: $text-work-color
+			font-size: $fs - 1
+			padding: 10px 30px
+		span
+			padding-right: 15px
+			color: $text-button-work-color
+
+	%box-base
+		&:hover
+			box-shadow: 0px 9px 30px 11px rgba(50, 50, 50, 0.1)
+
+	.box-1
+		background-color: $work-color-1
+		@extend %box-base
+	.box-2
+		background-color: $work-color-2
+		@extend %box-base
+	.box-3
+		background-color: $work-color-3
+		@extend %box-base
+	.box-4
+		background-color: $work-color-4
+		@extend %box-base
+	img
+		padding-top: 50px
+	button
+		position: relative
+		top: 20px
+		padding: 15px 60px 15px 60px
+		border: none
+		border-radius: 25px
+		background-color: $white
+		color: $text-button-work-color
+		box-shadow: 0px 2px 30px 0px rgba(50, 50, 50, 0.1)
+		outline: none
+
+
